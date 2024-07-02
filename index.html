@@ -33,8 +33,10 @@
                         'inter': ['Inter', 'sans-serif'],
                     },
                     lineHeight: {
-                        '120': '1.2',
-                        '150': '1.5',
+                        '120': '120%',
+                        '150': '150%',
+                        '118': '118%',
+                        '180': '180%',
                     }
                 }
             }
@@ -43,9 +45,40 @@
 </head>
 
 <body>
-    <h1 class="text-custom-5xl font-bold underline text-purple">
-        Hello world!
-    </h1>
+    <div class="bg-light-cream">
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <div class="text-3xl font-bold text-purple">Wellnest</div>
+                <nav>
+                    <ul class="flex space-x-6 text-grey">
+                        <li><a href="#" class="hover:text-purple">About Wellnest</a></li>
+                        <li><a href="#" class="hover:text-purple">Our Services</a></li>
+                        <li><a href="#" class="hover:text-purple">Benefits</a></li>
+                        <li><a href="#" class="hover:text-purple">FAQs</a></li>
+                        <li><a href="#" class="hover:text-purple">Upcoming Workshops</a></li>
+                    </ul>
+                </nav>
+                <button class="bg-purple text-white py-2 px-4 rounded hover:bg-light-pastel-purple">Get Started</button>
+            </div>
+        </header>
+        <main class="container mx-auto mt-12 px-6">
+            <section class="text-center">
+                <h1 class="text-custom-5xl font-bold underline text-rich-black">Welcome To <span
+                        class="text-purple">Wellnest</span></h1>
+                <p class="mt-4 text-grey text-lg leading-150">Supporting Individuals And Companies In Achieving Their
+                    Highest
+                    Potential For The Betterment Of Themselves And Our Community.</p>
+                <button class="mt-6 bg-purple text-white py-3 px-6 rounded-lg hover:bg-light-pastel-purple">Book A Free
+                    Consultation</button>
+            </section>
+            <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div><img src="https://via.placeholder.com/300x450" alt="Image 1" class="rounded-lg"></div>
+                <div><img src="https://via.placeholder.com/300x450" alt="Image 2" class="rounded-lg"></div>
+                <div><img src="https://via.placeholder.com/300x450" alt="Image 3" class="rounded-lg"></div>
+                <div><img src="https://via.placeholder.com/300x450" alt="Image 4" class="rounded-lg"></div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
