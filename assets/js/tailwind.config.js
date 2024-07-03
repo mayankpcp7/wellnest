@@ -4,7 +4,8 @@ tailwind.config = {
        screens: {
         "xsm": "350px",
         "xs": '400px',
-         'xxs': '560px'
+        'xxs': '560px',
+        '800': '810px',
         },
       colors: {
         "light-pastel-purple": "#A18EE8",
@@ -23,6 +24,8 @@ tailwind.config = {
         skin: "#FCF4EC",
         'platinum': '#E5E5E5',
         'dark-grey': '#56575A',
+        'soil':'#D2D2D2',
+        'off-grey': '#464646',
       },
       fontSize: {
         'custom-3xl': '32px',
