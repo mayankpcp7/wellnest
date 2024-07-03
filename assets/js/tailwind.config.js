@@ -1,6 +1,11 @@
 tailwind.config = {
   theme: {
     extend: {
+       screens: {
+        "xsm": "350px",
+        "xs": '400px',
+         'xxs': '560px'
+        },
       colors: {
         "light-pastel-purple": "#A18EE8",
         "light-brown": "#FFB685",
@@ -18,6 +23,7 @@ tailwind.config = {
         skin: "#FCF4EC",
       },
       fontSize: {
+         'custom-3xl': '32px',
         "custom-4xl": "40px",
         "custom-md": "19px",
         "custom-5xl": "50px",
@@ -35,6 +41,9 @@ tailwind.config = {
       },
       boxShadow: {
         "nav-button": "2px 2px 0px 0px #000000",
+         button: "2px 2px 0px 0px #000000",
+        coachImg: "0px 36.25px 25.89px 0px #040B1426",
+         graymeet: "0px 10px 20px 0px #d0d0d0",
       },
       screen: {
         xs: "500px",
