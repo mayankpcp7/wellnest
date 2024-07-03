@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellnest</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,10 +25,12 @@
                         'off-black': '#0E0F13',
                         'light-black': '#2F2F2F',
                         'light-grey': '#E9E9E9',
+                        'skin': '#FCF4EC',
                     },
                     fontSize: {
                         'custom-md': '19px',
                         'custom-5xl': '50px',
+                        '6xl': '64px',
                     },
                     fontFamily: {
                         'poppins': ['Poppins', 'sans-serif'],
@@ -37,48 +41,123 @@
                         '150': '150%',
                         '118': '118%',
                         '180': '180%',
-                    }
+                    },
+                    boxShadow: {
+                        'nav-button': '2px 2px 0px 0px #000000',
+                    },
+
                 }
             }
         }
     </script>
 </head>
 
-<body>
-    <div class="bg-light-cream">
-        <header class="bg-white shadow-md">
-            <div class="container mx-auto flex justify-between items-center py-4 px-6">
-                <div class="text-3xl font-bold text-purple">Wellnest</div>
-                <nav>
-                    <ul class="flex space-x-6 text-grey">
-                        <li><a href="#" class="hover:text-purple">About Wellnest</a></li>
-                        <li><a href="#" class="hover:text-purple">Our Services</a></li>
-                        <li><a href="#" class="hover:text-purple">Benefits</a></li>
-                        <li><a href="#" class="hover:text-purple">FAQs</a></li>
-                        <li><a href="#" class="hover:text-purple">Upcoming Workshops</a></li>
-                    </ul>
-                </nav>
-                <button class="bg-purple text-white py-2 px-4 rounded hover:bg-light-pastel-purple">Get Started</button>
+<body class="bg-white">
+    <header class=" relative xl:min-h-screen">
+        <nav class="max-w-[1172px] mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="/index.html"><img class="max-w-[179px] xl:max-w-[187px]"
+                        src="./assets/images/svg/common/nav-logo.svg" alt="nav-logo"></a>
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-black relative z-30 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="#A18EE8" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+
+                </div>
+                <ul id="nav-menu" class="items-center gap-6 xl:gap-8 hidden lg:flex">
+                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                            href="#about">About Wellnest</a></li>
+                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                            href="#services">Our Services</a></li>
+                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                            href="#benefits">Benefits</a></li>
+                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                            href="#faqs">FAQs</a></li>
+                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                            href="#workshops">Upcoming Workshops</a></li>
+
+                </ul>
+                <button
+                    class="text-white font-semibold text-base lg:block hidden bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                    Started</button>
+
             </div>
-        </header>
-        <main class="container mx-auto mt-12 px-6">
-            <section class="text-center">
-                <h1 class="text-custom-5xl font-bold underline text-rich-black">Welcome To <span
-                        class="text-purple">Wellnest</span></h1>
-                <p class="mt-4 text-grey text-lg leading-150">Supporting Individuals And Companies In Achieving Their
-                    Highest
-                    Potential For The Betterment Of Themselves And Our Community.</p>
-                <button class="mt-6 bg-purple text-white py-3 px-6 rounded-lg hover:bg-light-pastel-purple">Book A Free
-                    Consultation</button>
-            </section>
-            <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div><img src="https://via.placeholder.com/300x450" alt="Image 1" class="rounded-lg"></div>
-                <div><img src="https://via.placeholder.com/300x450" alt="Image 2" class="rounded-lg"></div>
-                <div><img src="https://via.placeholder.com/300x450" alt="Image 3" class="rounded-lg"></div>
-                <div><img src="https://via.placeholder.com/300x450" alt="Image 4" class="rounded-lg"></div>
-            </section>
+        </nav>
+        <div id="mobile-nav"
+            class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-10 min-h-screen w-full flex items-center justify-center">
+            <ul class="flex flex-col items-center py-6">
+                <li class="py-2"><a
+                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
+                        href="#about">About
+                        Wellnest</a></li>
+                <li class="py-2"><a
+                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
+                        href="#services">Our Services</a></li>
+                <li class="py-2"><a
+                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
+                        href="#benefits">Benefits</a></li>
+                <li class="py-2"><a
+                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
+                        href="#faqs">FAQs</a></li>
+                <li class="py-2"><a
+                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
+                        href="#workshops">Upcoming Workshops</a></li>
+                <li class="py-2">
+                    <button
+                        class="text-white font-semibold text-base bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                        Started</button>
+                </li>
+            </ul>
+        </div>
+        <main class="pt-20 px-4 flex flex-col justify-center items-center">
+            <h1 class="text-center font-poppins font-bold text-6xl leading-120 text-black">Welcome To <span
+                    class="text-light-pastel-purple">Wellnest</span></h1>
+            <p class="pt-4 text-center max-w-[642px] text-base text-black opacity-70">Supporting Individuals And
+                Companies In Achieving Their Highest Potential For The Betterment Of Themselves And Our
+                Community.</p>
+            <button
+                class="mt-10 text-white font-poppins text-base font-semibold px-6 py-3.5 bg-light-pastel-purple shadow-nav-button hover:shadow-none duration-300 rounded-[4px]">Book
+                A Free Consultation</button>
+            <div class="flex items-center flex-wrap lg:flex-nowrap lg:gap-7 relative z-20 mt-12">
+                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl lg:mt-[70px]"><img
+                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
+                        src="./assets/images/webp/hero/grid-item-1.webp" alt="grid-item-1"> </div>
+                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl"><img
+                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
+                        src="./assets/images/webp/hero/grid-item-2.webp" alt="grid-item-1"> </div>
+                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl lg:mt-[70px]"><img
+                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
+                        src="./assets/images/webp/hero/grid-item-3.webp" alt="grid-item-1"> </div>
+                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl"><img
+                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
+                        src="./assets/images/webp/hero/grid-item-4.webp" alt="grid-item-1"> </div>
+            </div>
         </main>
-    </div>
+        <img class="w-full pointer-events-none -z-0 -mt-[10%]" src="./assets/images/webp/hero/bottom-curve.webp"
+            alt="bottom-curve">
+    </header>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav.classList.contains('left-[-100%]')) {
+                mobileNav.classList.remove('left-[-100%]');
+                mobileNav.classList.add('left-0');
+            } else {
+                mobileNav.classList.remove('left-0');
+                mobileNav.classList.add('left-[-100%]');
+            }
+        });
+        document.querySelectorAll('#mobile-nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-nav').classList.add('left-[-100%]');
+                document.getElementById('mobile-nav').classList.remove('left-0');
+            });
+        });
+    </script>
 </body>
 
 </html>
