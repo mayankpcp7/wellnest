@@ -46,7 +46,7 @@ tailwind.config = {
       },
       boxShadow: {
         "nav-button": "2px 2px 0px 0px #000000",
-         button: "2px 2px 0px 0px #000000",
+         button: "3px 3px 0px 0px #000000",
         coachImg: "0px 36.25px 25.89px 0px #040B1426",
         graymeet: "0px 10px 20px 0px #d0d0d0",
         'button-shadow': '2px 2px 0px 0px black',
