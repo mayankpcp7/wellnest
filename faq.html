@@ -49,23 +49,34 @@
 </head>
 
 <body>
-    <section>
-        <div class="container mx-auto max-w-[768px] px-3">
-            <h2 class="text-5xl text-black font-poppins font-semibold pb-10 text-center">Frequently Asked <span
-                    class="text-purple">Questions</span></h2>
-            <div id="accordionExample">
+    <section class="relative overflow-hidden">
+        <img class="bottom-0 -left-[10%] absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/green-box.svg" alt="vectors">
+        <img class="top-[-5%] -right-[10%] absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/orange-box.svg" alt="vectors">
+        <img class="bottom-[15%] right-0 absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/green-waves-vector.svg" alt="vectors">
+        <img class="top-[10%] left-0 absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/orange-waves-vector.svg" alt="vectors">
+        <div
+            class="container relative z-10 mx-auto max-w-[768px] px-3 py-12 md:py-16 lg:pt-20 xl:pt-[140px]  xl:pb-[70px]">
+            <h2 class=" text-4xl sm:text-5xl text-black font-poppins font-semibold pb-7 sm:pb-10 text-center">Frequently
+                Asked
+                <span class="text-purple">Questions</span>
+            </h2>
+            <div id="collapse-example">
                 <!-- First Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingOne">
+                <div data-twe-collapse-init data-twe-target="#collapse-one" aria-expanded="true"
+                    aria-controls="collapse-one"
+                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingOne">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            1. What is a Health Coaches scope of practice?
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-one" aria-expanded="true"
+                            aria-controls="collapse-one">
+                            <span class="flex">1. <span> What is a Health Coaches scope of practice?</span></span>
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -74,12 +85,12 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseOne"
+                    </h3>
+                    <div id="collapse-one"
                         class="!visible max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
                         data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
-                        data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -103,18 +114,22 @@
                     </div>
                 </div>
                 <!-- Second Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingTwo">
+                <div data-twe-collapse-init data-twe-target="#collapse-two" aria-expanded="false"
+                    aria-controls="collapse-two"
+                    class="border-r-[2px] rounded-xl mb-5 [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingTwo">
                         <button
-                            class="group relative max-w-[555px] flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            3. How much does it cost to use the AI Trading Platform, and are there any discounts
-                            available?
+                            class="group relative  flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-two" aria-expanded="false"
+                            aria-controls="collapse-two">
+                            <span class="max-w-[555px] flex">
+                                3. <span>
+                                    How much does it cost to use the AI Trading Platform, and are there any discounts
+                                    available?
+                                </span>
+                            </span>
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -123,11 +138,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseTwo"
+                    </h3>
+                    <div id="collapse-two"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingTwo" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingTwo" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -151,17 +166,17 @@
                     </div>
                 </div>
                 <!-- Third Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingThree">
+                <div data-twe-collapse-init data-twe-target="#collapse-three" aria-expanded="false"
+                    aria-controls="collapse-three"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingThree">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseThree" aria-expanded="false"
-                            aria-controls="collapseThree">
-                            4. How can i start using the trading platform?
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-three" aria-expanded="false"
+                            aria-controls="collapse-three">
+                            4.<span> How can i start using the trading platform?</span>
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -170,11 +185,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseThree"
+                    </h3>
+                    <div id="collapse-three"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingThree" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingThree" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -198,17 +213,17 @@
                     </div>
                 </div>
                 <!-- Fourth Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseFour" aria-expanded="false"
-                    aria-controls="collapseFour"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingFour">
+                <div data-twe-collapse-init data-twe-target="#collapse-four" aria-expanded="false"
+                    aria-controls="collapse-four"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingFour">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseFour" aria-expanded="false"
-                            aria-controls="collapseFour">
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-four" aria-expanded="false"
+                            aria-controls="collapse-four">
                             5. How can i start using the trading platform?
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -217,11 +232,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseFour"
+                    </h3>
+                    <div id="collapse-four"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingFour" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingFour" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -245,17 +260,17 @@
                     </div>
                 </div>
                 <!-- Fifth Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseFive" aria-expanded="false"
-                    aria-controls="collapseFive"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingFive">
+                <div data-twe-collapse-init data-twe-target="#collapse-five" aria-expanded="false"
+                    aria-controls="collapse-five"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="heading-five">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseFive" aria-expanded="false"
-                            aria-controls="collapseFive">
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-five" aria-expanded="false"
+                            aria-controls="collapse-five">
                             6. Does it matter what time zone I live in?
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -264,11 +279,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseFive"
+                    </h3>
+                    <div id="collapse-five"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingFive" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingFive" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -292,17 +307,18 @@
                     </div>
                 </div>
                 <!-- Sixth Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseSix" aria-expanded="false"
-                    aria-controls="collapseSix"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingSix">
+                <div data-twe-collapse-init data-twe-target="#collapse-six" aria-expanded="false"
+                    aria-controls="collapse-six"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingSix">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseSix" aria-expanded="false"
-                            aria-controls="collapseSix">
-                            7. What if I need to pause or cancel the coaching agreement?
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-six" aria-expanded="false"
+                            aria-controls="collapse-six">
+                            <span class="flex gap-[2px]">7. <span>What if I need to pause or cancel the coaching
+                                    agreement?</span></span>
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -311,11 +327,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseSix"
+                    </h3>
+                    <div id="collapse-six"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingSix" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingSix" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
@@ -339,17 +355,17 @@
                     </div>
                 </div>
                 <!-- Seventh Accordion Item -->
-                <div data-twe-collapse-init data-twe-target="#collapseSeven" aria-expanded="false"
-                    aria-controls="collapseSeven"
-                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
-                    <h2 class="mb-0" id="headingSeven">
+                <div data-twe-collapse-init data-twe-target="#collapse-seven" aria-expanded="false"
+                    aria-controls="collapse-seven"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingSeven">
                         <button
-                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                            type="button" data-twe-collapse-init data-twe-target="#collapseSeven" aria-expanded="false"
-                            aria-controls="collapseSeven">
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-seven" aria-expanded="false"
+                            aria-controls="collapse-seven">
                             8. What about confidentiality?
                             <span
-                                class="-me-1 ms-auto h-4 md:h-5 w-4 md:w-5 shrink-0 hidden transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:block motion-reduce:transition-none md:[&>svg]:h-6 md:[&>svg]:w-6 [&>svg]:w-4 [&>svg]:h-4">
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
                                 <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -358,11 +374,11 @@
                                 </svg>
                             </span>
                         </button>
-                    </h2>
-                    <div id="collapseSeven"
+                    </h3>
+                    <div id="collapse-seven"
                         class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
-                        data-twe-collapse-item aria-labelledby="headingSeven" data-twe-parent="#accordionExample">
-                        <div class="px-5 pt-2 md:pt-[14px]">
+                        data-twe-collapse-item aria-labelledby="headingSeven" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
                             <ul class="list-disc">
                                 <li
                                     class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
