@@ -6,59 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellnest</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/webp/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'light-pastel-purple': '#A18EE8',
-                        'light-brown': '#FFB685',
-                        'brown': '#E2803E',
-                        'rich-black': '#1E2031',
-                        'tea-green': "#C5FCC3",
-                        'sky': '#AEEFF4',
-                        'green': '#4CDFB2',
-                        'light-cream': '#FFF8F3',
-                        'purple': '#A18EE8',
-                        'grey': '#4D4A49',
-                        'off-black': '#0E0F13',
-                        'light-black': '#2F2F2F',
-                        'light-grey': '#E9E9E9',
-                        'skin': '#FCF4EC',
-                    },
-                    fontSize: {
-                        'custom-4xl': '40px',
-                        'custom-md': '19px',
-                        'custom-5xl': '50px',
-                        '6xl': '64px',
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                    lineHeight: {
-                        '120': '120%',
-                        '150': '150%',
-                        '118': '118%',
-                        '180': '180%',
-                    },
-                    boxShadow: {
-                        'nav-button': '2px 2px 0px 0px #000000',
-                    },
-                    screen: {
-                        'xs': '500px'
-                    }
-
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="bg-white">
     <header class=" relative xl:min-h-screen">
-        <img class="absolute bottom-[24%] hidden lg:block start-[50%] translate-x-[-50%]" src="./assets/images/svg/header/bottom-lines.svg" alt="bottom-lines">
+        <img class="absolute bottom-[24%] hidden lg:block start-[50%] translate-x-[-50%]"
+            src="./assets/images/svg/header/bottom-lines.svg" alt="bottom-lines">
         <img class="max-w-[50px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[50%] sm:top-[11%] start-0"
             src="./assets/images/webp/hero/left-green-vector.webp" alt="vector">
         <img class="max-w-[90px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[31%] end-0"
@@ -125,7 +80,8 @@
             </div>
         </nav>
         <main class="pt-12 md:pt-20 px-4 flex flex-col bg-skin justify-center items-center">
-            <h1 class="text-center font-poppins font-bold text-custom-4xl sm:text-5xl lg:text-6xl leading-120 text-black">
+            <h1
+                class="text-center font-poppins font-bold text-custom-4xl sm:text-5xl lg:text-6xl leading-120 text-black">
                 Welcome To <span class="text-light-pastel-purple">Wellnest</span></h1>
             <p
                 class="pt-2 sm:pt-3 md:pt-4 text-center lg:max-w-[642px] md:max-w-[500px] sm:max-w-[450px] font-poppins text-sm md:text-base text-black opacity-70">
@@ -183,6 +139,7 @@
             });
         });
     </script>
+    <script src="./assets/js/tailwind.config.js"></script>
 </body>
 
 </html>
