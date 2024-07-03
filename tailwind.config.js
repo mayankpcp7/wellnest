@@ -20,6 +20,7 @@ tailwind.config = {
             fontSize: {
                 'custom-md': '19px',
                 'custom-5xl': '50px',
+                'custom-3xl': '32px'
             },
             fontFamily: {
                 'poppins': ['Poppins', 'sans-serif'],
