@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  @layer utilities {
+    .unlock-date{
+    @apply font-poppins font-semibold text-5xl lg:text-custom-5xl text-center sm:text-start leading-[0.8];}
+  }
