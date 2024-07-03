@@ -31,7 +31,6 @@ tailwind.config = {
             },
             boxShadow: {
                 'button-shadow': '2px 2px 0px 0px black',
-                'button-hover-shadow': '-2px -2px 0px 0px black',
             }
         }
     }

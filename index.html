@@ -6,149 +6,1018 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellnest</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/webp/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'light-pastel-purple': '#A18EE8',
-                        'light-brown': '#FFB685',
-                        'brown': '#E2803E',
-                        'rich-black': '#1E2031',
-                        'tea-green': "#C5FCC3",
-                        'sky': '#AEEFF4',
-                        'green': '#4CDFB2',
-                        'light-cream': '#FFF8F3',
-                        'purple': '#A18EE8',
-                        'grey': '#4D4A49',
-                        'off-black': '#0E0F13',
-                        'light-black': '#2F2F2F',
-                        'light-grey': '#E9E9E9',
-                        'skin': '#FCF4EC',
-                    },
-                    fontSize: {
-                        'custom-md': '19px',
-                        'custom-5xl': '50px',
-                        '6xl': '64px',
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                    lineHeight: {
-                        '120': '120%',
-                        '150': '150%',
-                        '118': '118%',
-                        '180': '180%',
-                    },
-                    boxShadow: {
-                        'nav-button': '2px 2px 0px 0px #000000',
-                    },
-
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="bg-white">
-    <header class=" relative xl:min-h-screen">
-        <nav class="max-w-[1172px] mx-auto px-4 py-6">
-            <div class="flex items-center justify-between">
-                <a href="/index.html"><img class="max-w-[179px] xl:max-w-[187px]"
-                        src="./assets/images/svg/common/nav-logo.svg" alt="nav-logo"></a>
-                <div class="lg:hidden">
-                    <button id="menu-toggle" class="text-black relative z-30 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="#A18EE8" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
+    <header class=" relative">
+        <img class="absolute bottom-[24%] hidden lg:block start-[50%] translate-x-[-50%]"
+            src="./assets/images/svg/header/bottom-lines.svg" alt="bottom-lines">
+        <img class="max-w-[50px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[50%] sm:top-[11%] start-0"
+            src="./assets/images/webp/hero/left-green-vector.webp" alt="vector">
+        <img class="max-w-[90px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[31%] end-0"
+            src="./assets/images/webp/hero/right-orange-vector.webp" alt="vector">
+        <nav class="bg-skin">
+            <div class="max-w-[1172px] mx-auto bg-skin px-4 py-6">
+                <div class="flex items-center justify-between">
+                    <a href="/index.html"><img class="max-w-[130px] sm:max-w-[160px] md:max-w-[179px] xl:max-w-[187px]"
+                            src="./assets/images/svg/common/nav-logo.svg" alt="nav-logo"></a>
+                    <div class="lg:hidden">
+                        <button id="menu-toggle" class="text-black relative z-40 focus:outline-none">
+                            <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="none" stroke="#A18EE8" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul id="nav-menu" class="items-center gap-6 xl:gap-8 hidden lg:flex">
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#about">About Wellnest</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#services">Our Services</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#benefits">Benefits</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#faqs">FAQs</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#workshops">Upcoming Workshops</a></li>
+
+                    </ul>
+                    <button
+                        class="text-white font-semibold text-base lg:block hidden bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                        Started</button>
 
                 </div>
-                <ul id="nav-menu" class="items-center gap-6 xl:gap-8 hidden lg:flex">
-                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
-                            href="#about">About Wellnest</a></li>
-                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+            </div>
+            <div id="mobile-nav"
+                class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-30 h-screen w-full flex items-center justify-center">
+                <ul class="flex flex-col items-center py-6">
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#about">About
+                            Wellnest</a></li>
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#services">Our Services</a></li>
-                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#benefits">Benefits</a></li>
-                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#faqs">FAQs</a></li>
-                    <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full  text-base font-normal opacity-70"
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#workshops">Upcoming Workshops</a></li>
-
+                    <li class="py-2">
+                        <button
+                            class="text-white font-semibold text-base bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                            Started</button>
+                    </li>
                 </ul>
-                <button
-                    class="text-white font-semibold text-base lg:block hidden bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
-                    Started</button>
-
             </div>
         </nav>
-        <div id="mobile-nav"
-            class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-10 min-h-screen w-full flex items-center justify-center">
-            <ul class="flex flex-col items-center py-6">
-                <li class="py-2"><a
-                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
-                        href="#about">About
-                        Wellnest</a></li>
-                <li class="py-2"><a
-                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
-                        href="#services">Our Services</a></li>
-                <li class="py-2"><a
-                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
-                        href="#benefits">Benefits</a></li>
-                <li class="py-2"><a
-                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
-                        href="#faqs">FAQs</a></li>
-                <li class="py-2"><a
-                        class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full"
-                        href="#workshops">Upcoming Workshops</a></li>
-                <li class="py-2">
-                    <button
-                        class="text-white font-semibold text-base bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
-                        Started</button>
-                </li>
-            </ul>
-        </div>
-        <main class="pt-20 px-4 flex flex-col justify-center items-center">
-            <h1 class="text-center font-poppins font-bold text-6xl leading-120 text-black">Welcome To <span
-                    class="text-light-pastel-purple">Wellnest</span></h1>
-            <p class="pt-4 text-center max-w-[642px] text-base text-black opacity-70">Supporting Individuals And
+        <main class="pt-12 md:pt-20 px-4 flex flex-col bg-skin justify-center items-center">
+            <h1
+                class="text-center font-poppins font-bold text-custom-4xl sm:text-5xl lg:text-6xl leading-120 text-black">
+                Welcome To <span class="text-light-pastel-purple">Wellnest</span></h1>
+            <p
+                class="pt-2 sm:pt-3 md:pt-4 text-center lg:max-w-[642px] md:max-w-[500px] sm:max-w-[450px] font-poppins text-sm md:text-base text-black opacity-70">
+                Supporting Individuals And
                 Companies In Achieving Their Highest Potential For The Betterment Of Themselves And Our
                 Community.</p>
             <button
-                class="mt-10 text-white font-poppins text-base font-semibold px-6 py-3.5 bg-light-pastel-purple shadow-nav-button hover:shadow-none duration-300 rounded-[4px]">Book
+                class="mt-5 sm:mt-10 text-white relative z-10 font-poppins text-sm sm:text-base font-semibold lg:px-6 sm:px-5 px-4 py-2 sm:py-3 lg:py-3.5 bg-light-pastel-purple shadow-nav-button hover:shadow-none duration-300 rounded-[4px]">Book
                 A Free Consultation</button>
-            <div class="flex items-center flex-wrap lg:flex-nowrap lg:gap-7 relative z-20 mt-12">
-                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl lg:mt-[70px]"><img
-                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
-                        src="./assets/images/webp/hero/grid-item-1.webp" alt="grid-item-1"> </div>
-                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl"><img
-                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
-                        src="./assets/images/webp/hero/grid-item-2.webp" alt="grid-item-1"> </div>
-                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl lg:mt-[70px]"><img
-                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
-                        src="./assets/images/webp/hero/grid-item-3.webp" alt="grid-item-1"> </div>
-                <div class="overflow-hidden w-full sm:w-6/12 lg:w-3/12 rounded-3xl"><img
-                        class="max-w-[303px] lg:h-[400px] xl:h-[427px] hover:scale-105 duration-300 w-full object-cover"
-                        src="./assets/images/webp/hero/grid-item-4.webp" alt="grid-item-1"> </div>
+            <div class="max-w-[1296px] mx-auto mt-12">
+                <div class="grid justify-center relative z-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-7">
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl lg:mt-20">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-1.webp" alt="grid-item-1">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-2.webp" alt="grid-item-2">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl lg:mt-20 ">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-3.webp" alt="grid-item-3">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-4.webp" alt="grid-item-4">
+                    </div>
+                </div>
             </div>
         </main>
-        <img class="w-full pointer-events-none -z-0 -mt-[10%]" src="./assets/images/webp/hero/bottom-curve.webp"
-            alt="bottom-curve">
+        <img class="w-full bg-white relative max-w-[303px] sm:max-w-full pointer-events-none z-[2] -mt-[11%]"
+            src="./assets/images/webp/hero/bottom-curve.webp" alt="bottom-curve">
     </header>
+    <!-- =================================== meet ================================= -->
+    <div class="py-10 md:pt-14 md:pb-12 lg:pt-[125px] relative lg:pb-[70px]">
+        <div class="container max-w-[1140px] mx-auto px-6 md:px-3">
+            <div class="flex flex-wrap justify-between flex-row -mx-3">
+                <div class="lg:w-6/12 w-full px-3 ">
+                    <div class="relative max-w-[510px] md:max-w-[570px] w-full mx-auto lg:mx-0 max-h-[673px]">
+                        <img class="relative shadow-graymeet z-20 lg:max-w-[550px] max-h-[650px]  xl:w-[570px] w-full h-full  lg:-translate-x-[8%] xl:-translate-x-[30%] xl:h-[673px] max-md:mx-auto rounded-3xl"
+                            src="./assets/images/webp/meet-person.webp" alt="meetPerson">
+                        <svg class="w-full hidden xsm:block absolute z-10 pointer-events-none max-w-[570px] max-h-[674px] translate-x-[4%] xs:translate-x-[3%] xxs:translate-x-[3%] lg:-translate-x-[3%] md:translate-x-[6%] xl:-translate-x-[24%] -top-[33%] xs:-top-[20%] xxs:top-[1%] sm:top-5 lg:-top-[1%] xl:top-[5%]"
+                            width="570" height="674" viewBox="0 0 570 674" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.4237 6.72021H546C555.941 6.72021 564 14.7791 564 24.7202V649.856C564 659.797 555.941 667.856 546 667.856H24.4237C14.4826 667.856 6.42371 659.797 6.42371 649.856V24.7202C6.42371 14.7791 14.4826 6.72021 24.4237 6.72021Z"
+                                stroke="#A18EE8" stroke-width="12" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="lg:w-6/12 w-full px-3 xl:pe-3 xl:ps-0">
+                    <h2
+                        class="text-4xl md:text-5xl font-semibold pb-3 mt-10 sm:mt-20 text-center lg:text-start mx-auto lg:mx-0 lg:mt-0 font-poppins text-black leading-120">
+                        Meet <span class="text-light-pastel-purple"> Mariam</span>
+                    </h2>
+                    <hr class="w-[55px] mx-auto lg:mx-0 border-t-0 h-[3px] bg-light-pastel-purple ">
+                    <p
+                        class="text-lg md:text-xl font-medium font-poppins text-center lg:text-start mx-auto lg:mx-0 my-3 xl:my-4 text-black opacity-70 leading-150">
+                        Hello There, I’m Mariam, Your New Health Coach!</p>
+                    <p
+                        class="text-xs md:text-base font-normal mb-3 xl:mb-4 font-poppins text-center lg:text-start mx-auto lg:mx-0 text-black opacity-70 max-w-[559px] leading-150">
+                        After 2 degrees, 16+ years in corporate, and a decade of working through my own health issues, I
+                        embarked on a journey to heal, chuck the societal script and find a purpose that both motivated
+                        me everyday and allowed me to make a difference in the world.
+                    </p>
+                    <p
+                        class="text-xs md:text-base font-normal mb-5 md:mb-10 lg:mb-5 xl:mb-10 font-poppins text-center lg:text-start mx-auto lg:mx-0 text-black opacity-70 max-w-[559px] leading-150">
+                        Through my own journey, I discovered the power of coaching and sought the guidance of a mentor
+                        who empowered me to overcome obstacles and reclaim control of my life. Now, as a Certified
+                        Health Coach, I am committed to paying forward this transformative support to others.
+                    </p>
+                    <div
+                        class="flex gap-3 xxs:gap-5 xl:gap-8 flex-wrap justify-center lg:justify-start pb-5 sm:pb-10 lg:pb-5  xl:pb-10 items-center">
+                        <div>
+                            <p
+                                class="text-4xl md:text-5xl font-semibold text-center xs:text-start font-poppins text-black leading-120 mb-2">
+                                02
+                            </p>
+                            <p class="text-xs md:text-base font-normal font-poppins leading-150 text-black opacity-70 ">
+                                Books
+                                Published</p>
+                        </div>
+                        <div class="xs:border-s xs:border-light-brown">
+                            <p
+                                class="text-4xl md:text-5xl mx-2 text-center xs:text-start xxs:ms-7 xl:ms-10 font-semibold font-poppins text-black leading-120 mb-2">
+                                4.5
+                            </p>
+                            <p
+                                class="text-xs md:text-base mx-2 xxs:ms-7 text-center xs:text-start xl:ms-10 font-normal font-poppins leading-150 text-black opacity-70 ">
+                                User
+                                Reviews</p>
+                        </div>
+                        <div class="xs:border-s xs:border-light-brown">
+                            <p
+                                class="text-4xl md:text-5xl mx-2 text-center xs:text-start xxs:ms-7 xl:ms-10 font-semibold font-poppins text-black leading-120 mb-2">
+                                04
+                            </p>
+                            <p
+                                class="text-xs md:text-base ms-2 xxs:ms-7 text-center xs:text-start xl:ms-10 font-normal font-poppins leading-150 text-black opacity-70 ">
+                                Best
+                                Seller Awards
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-[15px_18px] max-w-[558px] mx-auto lg:mx-0 bg-light-pastel-purple flex flex-col sm:flex-row sm:max-h-[160px] items-center gap-2 sm:gap-4 md:gap-9 rounded-3xl border-r-4 border-b-4 border-black">
+                        <div class="p-2 sm:p-4 bg-white">
+                            <img class="w-[97px] h-[97px]" src="./assets/images/svg/meet/qrCode.svg" alt="Qr code">
+                        </div>
+                        <div>
+                            <p
+                                class="text-xl font-poppins font-medium mt-2 md:mt-0 leading-120 text-center sm:text-start text-white mb-2">
+                                Coach Mariam.</p>
+                            <p class="text-custom-md font-inter font-normal py-2 text-center sm:text-start text-white">
+                                Mail :
+                                <a href="mailto:coachmariam@gmail.com">coachmariam@gmail.com</a>
+                            </p>
+                            <p class="text-custom-md font-inter font-normal text-center sm:text-start text-white">Phone
+                                :
+                                <a href="tel:(+1)9876434000">(+1) 987 643 4000</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================================== services ================================================= -->
+    <section class="max-w-[1472p] px-4 mx-auto md:py-[70px] sm:py-16 py-12 relative">
+        <img class="absolute top-[3%] right-0" src="./assets/images/services/svg/grin-lines.svg" alt="grin-lines">
+        <h2
+            class="text-center leading-120 text-black lg:text-5xl md:text-4xl text-custom-3xl font-semibold font-poppins">
+            Wellnest <span class="text-purple">Services</span></h2>
+        <div class="mt-10 flex justify-center flex-wrap felx-row gap-6">
+            <div
+                class="bg-tea-green lg:max-w-[364px] max-w-[354px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 hover:scale-[1.02] transition-all duration-300 ease-linear">
+                <div class="flex md:justify-start justify-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                        <img src="./assets/images/services/svg/coaching.svg" alt="coaching">
+                    </div>
+                </div>
+                <h4
+                    class="font-poppins font-medium sm:text-2xl text-xl text-rich-black !leading-120 pt-6 md:text-start text-center">
+                    One-On-One
+                    Coaching
+                </h4>
+                <p
+                    class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2 md:text-start text-center">
+                    As
+                    a
+                    Certified
+                    Health Coach,
+                    I support
+                    individuals in addressing all areas of their life to achieve alignment, balance,
+                    purpose, health, wellness and happiness. Click here to find out more and book your free
+                    consultation</p>
+                <div class="flex md:justify-start justify-center">
+                    <button
+                        class="font-poppins font-semibold text-base hover:shadow-none duration-300 transition-all ease-linear text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-[52px] border-black border-e border-b">Find
+                        Out
+                        More</button>
+                </div>
+            </div>
+            <div
+                class="bg-sky lg:max-w-[364px] max-w-[354px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 hover:scale-[1.02] transition-all duration-300 ease-linear">
+                <div class="flex md:justify-start justify-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                        <img src="./assets/images/services/svg/consultancy.svg" alt="consultancy">
+                    </div>
+                </div>
+                <h4
+                    class="font-poppins font-medium sm:text-2xl text-xl text-rich-black !leading-120 pt-6 md:text-start text-center">
+                    Brand
+                    Consultancy &
+                    Corporate Wellness</h4>
+                <p
+                    class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2 md:text-start text-center">
+                    With 16 years of corporate experience, I now partner with businesses that
+                    value social responsibility, aim to build authentic brands, and strive to be
+                    Employers of Choice. Click here to explore my services and workshops.</p>
+                <div class="flex md:justify-start justify-center"><button
+                        class="font-poppins font-semibold text-base hover:shadow-none duration-300 transition-all ease-linear text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-6 border-black border-e border-b ">Explore
+                        More</button></div>
+            </div>
+            <div
+                class="bg-green lg:max-w-[364px] max-w-[354px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 relative">
+                <div
+                    class="absolute top-0 left-0 w-full h-full rounded-[28px] backdrop-blur-[15px] bg-white z-10 bg-opacity-10 flex justify-center items-center">
+
+                    <div class="flex flex-col justify-center items-center ">
+                        <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                            <img src="./assets/images/services/svg/store.svg" alt="store">
+                        </div>
+                        <h4
+                            class="font-poppins font-medium text-custom-3xl text-rich-black leading-120 pt-6 md:text-start text-center">
+                            Wellness
+                            Store
+                        </h4>
+                        <button
+                            class="font-poppins font-semibold text-base cursor-not-allowed text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-5 border-black border-e border-b ">Coming
+                            Soon</button>
+                    </div>
+                </div>
+                <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                    <img src="./assets/images/services/svg/store.svg" alt="store">
+                </div>
+                <h4 class="font-poppins font-medium sm:text-2xl text-xl text-rich-black !leading-120 pt-6">Wellness
+                    Store</h4>
+                <p
+                    class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2 md:text-start text-center">
+                    We are thrilled to introduce a space dedicated to nurturing your mind, body, and spirit. Whether
+                    you're looking to
+                    enhance your physical health, boost your mental clarity, or find balance in your daily life, our
+                    store will offer
+                    everything you need to thrive.</p>
+                <button
+                    class="font-poppins font-semibold text-base text-white leading-150 bg-purple py-3.5 px-[29px] rounded-full mt-6">Book
+                    Your Free Consultaion</button>
+            </div>
+        </div>
+    </section>
+    <section class="md:pt-[70px] md:pb-0 sm:py-16 py-12">
+        <div class="bg-light-brown bg-opacity-10 relative">
+            <img class="absolute top-0 left-0 pointer-events-none" src="./assets/images/services/svg/bubble-vector.svg"
+                alt="bubble-vector">
+            <img class="absolute bottom-0 left-0 pointer-events-none"
+                src="./assets/images/services/svg/doted-circle.svg" alt="doted-circle">
+            <img class="absolute bottom-0 md:right-[36%] right-0 pointer-events-none"
+                src="./assets/images/services/svg/doted-circle.svg" alt="doted-circle">
+            <img class="absolute top-[18%] left-[5%] pointer-events-none"
+                src="./assets/images/services/svg/backtick.svg" alt="backtick">
+            <img class="absolute bottom-[40%] left-[28%] rotate-180 pointer-events-none"
+                src="./assets/images/services/svg/backtick.svg" alt="backtick">
+            <div class="max-w-[1172px] px-4 mx-auto">
+                <div class="flex md:flex-row flex-col sm:gap-10 gap-8 justify-between md:py-0 sm:py-py-12 py-10">
+                    <div class="flex flex-col md:w-7/12 lg:py-[106px] md:py-16">
+                        <p
+                            class="font-poppins font-semibold lg:text-2xl text-xl text-black md:max-w-[618px] !leading-120 md:text-start text-center">
+                            “The key
+                            to
+                            change is
+                            honesty!
+                            It’s time we
+                            slow
+                            down and really look at the different parts of our lives that are
+                            feeding us and propelling us forward - and parts that are only holding us back.”</p>
+                        <p
+                            class="font-poppins font-medium text-xl text-brown pt-6 leading-120 md:text-start text-center">
+                            Coach Mariyam</p>
+                        <p class="font-poppins font-normal text-base text-brown pt-1 md:text-start text-center">CEO
+                        </p>
+                    </div>
+                    <div class="md:w-5/12 flex mg:justify-end justify-center relative ">
+                        <div
+                            class="w-[362px] h-[427px] border-[12px] border-purple rounded-[24px] lg:absolute lg:block hidden lg:top-0 bottom-0 right-0">
+                        </div>
+                        <img class="max-w-[362px] shadow-coachImg rounded-[24px] w-full lg:min-h-[427px] lg:max-h-full max-h-[427px] h-full z-10 lg:absolute top-[-6%] right-6 object-cover"
+                            src="./assets/images/services/png/coach-mariyam.png" alt="coach-mariyam">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================  MY VISION  ================================== -->
+    <section class=" pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-[150px] relative">
+        <span class=" absolute top-[1%] md:top-[2%] lg:top-[3%] left-0">
+            <svg class="w-[105px] h-[30px] md:w-[185px] md:h-[51px]" width="185" height="51" viewBox="0 0 185 51"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M184.801 49.6312C174.535 49.6312 174.535 38.5527 164.268 38.5527C154.001 38.5527 153.891 49.6312 143.734 49.6312C133.577 49.6312 133.468 38.5527 123.201 38.5527C112.934 38.5527 112.956 49.6312 102.689 49.6312C92.4226 49.6312 92.4226 38.5527 82.1558 38.5527C71.8891 38.5527 71.8891 49.6312 61.6224 49.6312C51.3557 49.6312 51.3556 38.5527 41.0889 38.5527C30.8221 38.5527 30.8002 49.6312 20.5335 49.6312C10.2667 49.6312 10.2668 38.5527 4.00009e-05 38.5527"
+                    stroke="#A18EE8" stroke-width="2" stroke-miterlimit="10" />
+                <path
+                    d="M184.801 30.875C174.535 30.875 174.535 19.9062 164.268 19.9062C154.001 19.9062 154.001 30.875 143.734 30.875C133.468 30.875 133.468 19.9062 123.201 19.9062C112.934 19.9062 112.956 30.875 102.689 30.875C92.4226 30.875 92.4226 19.9062 82.1558 19.9062C71.8891 19.9062 71.8891 30.875 61.6224 30.875C51.3557 30.875 51.3556 19.9062 41.0889 19.9062C30.8221 19.9062 30.8002 30.875 20.5335 30.875C10.2667 30.875 10.2668 19.9062 4.00009e-05 19.9062"
+                    stroke="#A18EE8" stroke-width="2" stroke-miterlimit="10" />
+                <path
+                    d="M184.801 12.0784C174.535 12.0784 174.535 1 164.268 0.999999C154.001 0.999999 154.001 12.0784 143.734 12.0784C133.468 12.0784 133.468 0.999998 123.201 0.999997C112.934 0.999997 112.956 12.0784 102.689 12.0784C92.4226 12.0784 92.4226 0.999996 82.1558 0.999996C71.8891 0.999995 71.8891 12.0784 61.6224 12.0784C51.3557 12.0784 51.3556 0.999994 41.0889 0.999994C30.8221 0.999993 30.8002 12.0784 20.5335 12.0784C10.2667 12.0784 10.2668 0.999992 4.00009e-05 0.999992"
+                    stroke="#A18EE8" stroke-width="2" stroke-miterlimit="10" />
+            </svg>
+        </span>
+        <img src="./assets/images/webp/vision-old-man.webp" alt="old-man"
+            class="w-full max-w-[1920px] max-h-[603px] mx-auto object-cover">
+        <div class="max-w-[1164px] mx-auto px-3">
+            <h2 class="font-poppins font-semibold text-4xl md:text-5xl !leading-120 text-center mt-4 sm:mt-6 md:mt-10">
+                My Vision For <span class="text-light-pastel-purple">Tomorrow</span></h2>
+            <p class="font-poppins font-normal text-sm sm:text-base !leading-150 text-center mt-2 sm:mt-4 opacity-70">
+                <span class="sm:block">To support our society in realizing a better self, a better</span>
+                <span class="lg:block"> community and better world. At the heart of our mission lies a deep commitment
+                    to fostering positive change</span>
+                <span class="lg:block"> within individuals, communities, and the world at large. We believe that by
+                    empowering each person to realize</span>
+                their full potential, we can collectively build a more compassionate, connected, and sustainable future.
+            </p>
+            <button
+                class=" border-r-[1px] border-b-[1px] border-solid border-black shadow-button-shadow hover:shadow-button-hover-shadow duration-300 ease-in-out  py-2 sm:py-[10px] md:py-[14px] px-4 sm:px-6 rounded bg-light-pastel-purple flex mx-auto mt-4 sm:mt-6 md:mt-10 font-poppins font-semibold text-sm sm:text-base leading-150 text-white">
+                Book A Free Consultation Now
+            </button>
+        </div>
+    </section>
+    <!-- ===================================  UNLOCK YOUR POTENTIAL  ================================== -->
+    <section class="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[140px] relative">
+        <img src="./assets/images/webp/green-elipse.webp" alt="green-elipse"
+            class="absolute left-0 bottom-[15%] sm:bottom-[22%] md:bottom-[18%] max-w-[112px] pointer-events-none max-h-[112px] md:max-w-[224px] md:max-h-[224px] h-full">
+        <div class="max-w-[1164px] mx-auto px-3">
+            <div class="flex lg:flex-row flex-col  justify-between relative z-[2]">
+                <h2
+                    class="font-poppins font-semibold text-4xl md:text-5xl !leading-120 lg:max-w-[388px] mx-auto lg:mx-0 text-center lg:text-start">
+                    Unlock Your Potential With <span class="text-light-pastel-purple sm:block lg:flex">Inspiring
+                        Events</span></h2>
+                <div class="max-w-[594px] w-full mx-auto lg:mx-0 pt-4 sm:pt-6 md:pt-8 lg:pt-0">
+                    <div
+                        class="duration-300 ease-in-out border-b sm:max-h-[174px] border-solid border-platinum py-3 sm:py-4 md:py-6 flex flex-col sm:flex-row w-full gap-3 sm:gap-6">
+                        <div class="text-black">
+                            <p
+                                class="font-poppins font-semibold text-5xl lg:text-custom-5xl text-center sm:text-start leading-[0.8]">
+                                01</p>
+                            <p
+                                class="opacity-70 font-normal font-poppins text-sm sm:text-base !leading-150 mt-1 sm:mt-2 text-center sm:text-start">
+                                August 2023</p>
+                        </div>
+                        <div class="font-poppins">
+                            <p
+                                class="font-medium text-xl md:text-2xl !leading-[1.08] max-w-[471px] text-center sm:text-start mx-auto sm:mx-0">
+                                Meditation 101: Learn the basics of meditation to start your own practice.</p>
+                            <p
+                                class="font-poppins font-normal text-sm sm:text-base !leading-none mt-2 sm:mt-4 opacity-70 text-center sm:text-start">
+                                Duration: 4 weekly sessions</p>
+                            <div
+                                class="flex gap-[14px] items-center mt-3 sm:mt-4 md:mt-6 justify-center sm:justify-start">
+                                <p class="font-bold text-sm sm:text-base !leading-150 text-black">Cost: $100</p>
+                                <p
+                                    class="font-bold text-sm sm:text-base !leading-150 text-light-pastel-purple cursor-pointer">
+                                    Register Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="duration-300 sm:max-h-[151px] ease-in-out border-b border-solid border-platinum py-3 sm:py-4 md:py-6 flex flex-col sm:flex-row w-full gap-3 sm:gap-6 mt-4 md:mt-6">
+                        <div class="text-black">
+                            <p
+                                class="font-poppins font-semibold text-5xl lg:text-custom-5xl text-center sm:text-start leading-[0.8]">
+                                04</p>
+                            <p
+                                class="opacity-70 font-normal font-poppins text-sm sm:text-base !leading-150 mt-1 sm:mt-2 text-center sm:text-start">
+                                August 2023</p>
+                        </div>
+                        <div class="font-poppins">
+                            <p
+                                class="font-medium text-xl md:text-2xl !leading-120 max-w-[471px] text-center sm:text-start mx-auto sm:mx-0">
+                                Tap into your Intuition</p>
+                            <p
+                                class="font-poppins font-normal text-sm sm:text-base !leading-none  mt-2 sm:mt-4 opacity-70 text-center sm:text-start">
+                                Duration: 4 weekly sessions</p>
+                            <div
+                                class="flex gap-[14px] items-center mt-3 sm:mt-4 md:mt-6 justify-center sm:justify-start">
+                                <p class="font-bold text-sm sm:text-base !leading-150 text-black">Cost: $100</p>
+                                <p
+                                    class="font-bold text-sm sm:text-base !leading-150 text-light-pastel-purple cursor-pointer">
+                                    Register Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="duration-300 sm:max-h-[151px] ease-in-out border-b border-solid border-platinum py-3 sm:py-4 md:py-6 flex flex-col sm:flex-row w-full gap-3 sm:gap-6 mt-4 md:mt-6">
+                        <div class="text-black">
+                            <p
+                                class="font-poppins font-semibold text-5xl lg:text-custom-5xl text-center sm:text-start leading-[0.8]">
+                                06</p>
+                            <p
+                                class="opacity-70 font-normal font-poppins text-sm sm:text-base !leading-150 mt-1 sm:mt-2 text-center sm:text-start">
+                                August 2023</p>
+                        </div>
+                        <div class="font-poppins">
+                            <p
+                                class="font-medium text-xl md:text-2xl !leading-120 max-w-[471px] text-center sm:text-start mx-auto sm:mx-0">
+                                Living in Alignment</p>
+                            <p
+                                class="font-poppins font-normal text-sm sm:text-base !leading-none  mt-2 sm:mt-4 opacity-70 text-center sm:text-start">
+                                Duration: 4 weekly sessions</p>
+                            <div
+                                class="flex gap-[14px] items-center mt-3 sm:mt-4 md:mt-6 justify-center sm:justify-start">
+                                <p class="font-bold text-sm sm:text-base !leading-150 text-black">Cost: $100</p>
+                                <p
+                                    class="font-bold text-sm sm:text-base !leading-150 text-light-pastel-purple cursor-pointer">
+                                    Register Now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================= faq ======================================== -->
+    <section class="relative overflow-hidden">
+        <img class="bottom-0 -left-[10%] absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/green-box.svg" alt="vectors">
+        <img class="top-[-5%] -right-[10%] absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/orange-box.svg" alt="vectors">
+        <img class="bottom-[15%] right-0 absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/green-waves-vector.svg" alt="vectors">
+        <img class="top-[10%] left-0 absolute pointer-events-none hidden lg:block "
+            src="./assets/images/svg/orange-waves-vector.svg" alt="vectors">
+        <div
+            class="container relative z-10 mx-auto max-w-[768px] px-3 py-12 md:py-16 lg:pt-20 xl:pt-[140px]  xl:pb-[70px]">
+            <h2 class=" text-4xl sm:text-5xl text-black font-poppins font-semibold pb-7 sm:pb-10 text-center">Frequently
+                Asked
+                <span class="text-purple">Questions</span>
+            </h2>
+            <div id="collapse-example">
+                <!-- First Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-one" aria-expanded="true"
+                    aria-controls="collapse-one"
+                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingOne">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-one" aria-expanded="true"
+                            aria-controls="collapse-one">
+                            <span class="flex">1. <span> What is a Health Coaches scope of practice?</span></span>
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-one"
+                        class="!visible max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
+                        data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-two" aria-expanded="false"
+                    aria-controls="collapse-two"
+                    class="border-r-[2px] rounded-xl mb-5 [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingTwo">
+                        <button
+                            class="group relative  flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-two" aria-expanded="false"
+                            aria-controls="collapse-two">
+                            <span class="max-w-[555px] flex">
+                                3. <span>
+                                    How much does it cost to use the AI Trading Platform, and are there any discounts
+                                    available?
+                                </span>
+                            </span>
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-two"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingTwo" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-three" aria-expanded="false"
+                    aria-controls="collapse-three"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingThree">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-three" aria-expanded="false"
+                            aria-controls="collapse-three">
+                            4.<span> How can i start using the trading platform?</span>
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-three"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingThree" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-four" aria-expanded="false"
+                    aria-controls="collapse-four"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingFour">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-four" aria-expanded="false"
+                            aria-controls="collapse-four">
+                            5. How can i start using the trading platform?
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-four"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingFour" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-five" aria-expanded="false"
+                    aria-controls="collapse-five"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="heading-five">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-five" aria-expanded="false"
+                            aria-controls="collapse-five">
+                            6. Does it matter what time zone I live in?
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-five"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingFive" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sixth Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-six" aria-expanded="false"
+                    aria-controls="collapse-six"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingSix">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-six" aria-expanded="false"
+                            aria-controls="collapse-six">
+                            <span class="flex gap-[2px]">7. <span>What if I need to pause or cancel the coaching
+                                    agreement?</span></span>
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-six"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingSix" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seventh Accordion Item -->
+                <div data-twe-collapse-init data-twe-target="#collapse-seven" aria-expanded="false"
+                    aria-controls="collapse-seven"
+                    class="border-r-[2px] [&:not([data-twe-collapse-collapsed])]:shadow-[0_4px_23px_0_#00000040] rounded-xl bg-white shadow-[0_4px_23px_0_#0000001F] px-3 py-4 md:p-6 border-black border-b-[2px]">
+                    <h3 class="mb-0" id="headingSeven">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg md:[&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-sm md:text-base font-poppins font-bold text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
+                            type="button" data-twe-collapse-init data-twe-target="#collapse-seven" aria-expanded="false"
+                            aria-controls="collapse-seven">
+                            8. What about confidentiality?
+                            <span
+                                class="-me-1 ms-auto shrink-0 rotate-180 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none ">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h3>
+                    <div id="collapse-seven"
+                        class="hidden max-w-[627px] md:[&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item aria-labelledby="headingSeven" data-twe-parent="#collapse-example">
+                        <div class="px-4 pt-2 md:pt-[14px]">
+                            <ul class="list-disc">
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Facilitate and empower clients to develop and achieve health and wellness goals.
+                                </li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Support clients in navigating behavioral change in the capacity of a holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Share evidence-based resources and information from recognized authorities.</li>
+                                <li
+                                    class="pt-1 text-dark-gray font-poppins font-normal text-sm md:text-base leading-150">
+                                    Assist clients in strengthening their insight and intuition to set goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================= popup ======================================= -->
+    <section class="pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[156px]">
+        <div class="max-w-[1164px] mx-auto px-3">
+            <div
+                class="bg-light-brown rounded-3xl border-r-8 border-b-8 border-r-black border-b-black py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[117px] px-7 md:px-10 xl:px-[51px] relative z-[1] overflow-hidden">
+                <div
+                    class="absolute top-6 right-0 z-[-1] max-w-[150px] lg:max-w-[184px] max-h-9 lg:max-h-12 pointer-events-none">
+                    <img class="w-full h-full" width="184" height="48" src="./assets/images/svg/white-line-vector.svg"
+                        alt="line-vector">
+                </div>
+                <div class="absolute top-0 -left-1 z-[-1] pointer-events-none">
+                    <svg class=" max-w-[400px] sm:max-w-[370px] md:max-w-[390px] lg:max-w-[450px] xl:max-w-[536px] max-md:max-h-[300px]"
+                        width="536" height="506" viewBox="0 0 536 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M83.0504 -86.439C27.2645 -72.4142 -31.3849 -55.7226 -69.8155 -12.926C-108.562 30.2227 -116.372 91.1436 -127.519 148.053C-138.796 205.627 -151.581 264.553 -135.201 320.889C-118.376 378.754 -79.9098 427.618 -34.6605 467.42C11.1025 507.674 64.8758 540.239 125.067 549.825C184.687 559.32 246.268 546.902 300.719 520.832C352.385 496.096 386.479 448.804 424.867 406.291C464.437 362.469 515.142 324.486 529.684 267.263C544.51 208.925 532.023 145.225 504.865 91.5064C479.046 40.4351 429.256 8.18391 382.222 -24.4197C338.781 -54.5332 293.115 -80.4264 241.356 -91.1563C188.767 -102.058 135.136 -99.5337 83.0504 -86.439Z"
+                            fill="white" fill-opacity="0.2" />
+                    </svg>
+
+                </div>
+                <span
+                    class="absolute bottom-[-2%] -right-[20%] sm:-right-[10%] xl:-right-[8%] -z-[1] pointer-events-none"><svg
+                        class="max-w-[130px] sm:max-w-[150px] lg:max-w-[183px] max-h-[130px] sm:max-h-[150px] lg:max-h-[183px]"
+                        width="183" height="183" viewBox="0 0 183 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.1">
+                            <path
+                                d="M91.5 36.6C121.772 36.6 146.4 61.2285 146.4 91.5C146.4 121.772 121.772 146.4 91.5 146.4C61.228 146.4 36.6 121.772 36.6 91.5C36.6 61.2285 61.228 36.6 91.5 36.6ZM91.5 0C40.966 0 0 40.966 0 91.5C0 142.034 40.966 183 91.5 183C142.034 183 183 142.034 183 91.5C183 40.966 142.034 0 91.5 0Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </span>
+                <div class="flex flex-row flex-wrap -mx-3 items-center">
+                    <div class="w-full sm:w-1/2 px-3">
+                        <span><svg class="max-lg:max-w-[270px] max-xl:max-w-[300px] max-sm:w-full" width="372"
+                                height="237" viewBox="0 0 372 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M110.627 0.154702V3.55901C99.5675 17.0833 102.219 37.0448 119 77.8343L153.712 162.415L171.156 118.438C174.759 109.68 177.822 100.753 180.331 91.699L167.458 60.3795C157.166 35.3426 142.653 12.0078 132.745 3.55901V0.154702H243.372V3.55901C232.312 17.0833 234.964 37.0448 251.745 77.8343L286.632 162.415L304.075 118.438C328.496 57.1919 320.472 14.2052 311.715 3.4043V0H372V3.4043C357.103 14.2052 333.834 58.2132 317.053 100.829L262.874 237H239.988L184.168 100.829L129.989 237H107.103L34.887 60.3795C24.4209 35.3426 10.0823 12.0078 0 3.55901V0.154702H110.627Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="w-full sm:w-1/2 px-3 xl:px-0 pt-6 sm:pt-0">
+                        <h3
+                            class="font-poppins font-semibold text-xl xs:text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-black !leading-120 capitalize">
+                            For more details on my academic and professional achievements, please visit my LinkedIn
+                            profile.
+                        </h3>
+                        <button
+                            class="flex items-center gap-1.5 bg-white rounded border-r border-b border-r-black border-b-black shadow-button-Shadow py-2.5 px-4 md:py-[13.5px] md:px-6 mt-6 md:mt-8 lg:mt-10 group hover:bg-black duration-300 transition-all ease-linear"><span
+                                class="font-poppins font-semibold !leading-normal text-sm sm:text-base inline-flex items-center group-hover:text-white duration-300">Visit
+                                My Profile</span>
+                            <span class="max-sm:max-w-14"><svg class="w-full" width="78" height="20" viewBox="0 0 78 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:fill-light-brown duration-300"
+                                        d="M30.7821 11.6714L35.0861 16.9642H31.6875L27.8571 12.1033V16.9642H25.0714V3.03576H27.8571V11.2258L31.395 7.21424H34.9467L30.7821 11.6714ZM19.6392 6.93576C19.0293 6.94493 18.4307 7.10177 17.8946 7.39285C17.3585 7.68392 16.901 8.10057 16.5611 8.60712V7.21424H13.9286V16.9642H16.7142V12.4096C16.6777 12.079 16.7096 11.7445 16.8079 11.4267C16.9062 11.109 17.0689 10.8149 17.2857 10.5627C17.5026 10.3106 17.7691 10.1057 18.0685 9.96098C18.368 9.81624 18.694 9.73467 19.0264 9.72136C20.6421 9.72136 20.8929 11.3092 20.8929 12.4096V16.9642H23.6786V11.7967C23.6786 8.7325 22.6617 6.93576 19.695 6.93576H19.6392ZM44.5714 12.3121C44.582 12.5164 44.582 12.7207 44.5714 12.925H37.2589V13.0225C37.3776 13.6033 37.6994 14.1229 38.1665 14.4879C38.6337 14.8529 39.2156 15.0395 39.8079 15.0142C40.2777 15.0347 40.7469 14.9601 41.1873 14.795C41.6276 14.6298 42.0302 14.3776 42.3708 14.0533L44.2233 15.4461C43.6362 16.0453 42.93 16.5148 42.1502 16.8243C41.3705 17.1338 40.5346 17.2764 39.6964 17.2429C39.0022 17.2867 38.3067 17.1811 37.6569 16.9331C37.007 16.6852 36.418 16.3006 35.9295 15.8055C35.4409 15.3104 35.0644 14.7162 34.8252 14.0631C34.586 13.41 34.4897 12.7131 34.5429 12.0196C34.5286 11.335 34.6555 10.6548 34.9156 10.0213C35.1758 9.38789 35.5636 8.81482 36.055 8.33785C36.5463 7.86088 37.1306 7.49024 37.7715 7.24901C38.4124 7.00778 39.0961 6.90115 39.78 6.93576C42.3986 6.93576 44.5714 8.78826 44.5714 12.3121ZM41.9808 11.1142C41.9705 10.8384 41.9042 10.5675 41.7858 10.318C41.6675 10.0686 41.4996 9.84589 41.2924 9.66344C41.0852 9.481 40.843 9.34265 40.5806 9.25683C40.3182 9.17101 40.0411 9.1395 39.7661 9.16424C38.5413 9.03186 37.4321 9.89458 37.2589 11.1142H41.9808ZM2.78576 3.03576H0V16.9642H8.35712V14.1788H2.78576V3.03576ZM52.9286 3.03576H55.7142V16.9642H53.0817V15.9892C52.7475 16.4011 52.3214 16.729 51.8377 16.9466C51.354 17.1643 50.8261 17.2658 50.2961 17.2429C49.6487 17.2263 49.0115 17.0774 48.4237 16.8055C47.8359 16.5335 47.31 16.1442 46.8782 15.6616C46.4463 15.1789 46.1178 14.613 45.9128 13.9986C45.7077 13.3843 45.6305 12.7345 45.6858 12.0892C45.62 11.443 45.6895 10.7902 45.8897 10.1724C46.09 9.55447 46.4167 8.98504 46.849 8.5003C47.2814 8.01555 47.8099 7.62611 48.4009 7.35676C48.992 7.0874 49.6326 6.94403 50.2821 6.93576C50.7659 6.91453 51.249 6.98981 51.7034 7.1572C52.1578 7.32459 52.5743 7.58076 52.9286 7.91076V3.03576ZM53.1375 12.0892C53.1813 11.7676 53.1556 11.4403 53.0622 11.1295C52.9688 10.8186 52.8098 10.5314 52.596 10.2872C52.3821 10.043 52.1184 9.84745 51.8226 9.71382C51.5268 9.58018 51.2057 9.51153 50.8811 9.5125C49.5486 9.60924 48.5389 10.7552 48.6108 12.0892C48.5389 13.4233 49.5486 14.5694 50.8811 14.6661C51.2057 14.6671 51.5268 14.5985 51.8226 14.4648C52.1185 14.3312 52.3822 14.1356 52.596 13.8914C52.8099 13.6472 52.9689 13.36 53.0623 13.0491C53.1557 12.7382 53.1813 12.4109 53.1375 12.0892ZM11.1429 2.75712C10.6949 2.76343 10.266 2.93951 9.94284 3.2498C9.61967 3.56008 9.42628 3.98144 9.40174 4.42879C9.40174 5.39023 10.1813 6.16977 11.1429 6.16977C12.1045 6.16977 12.8837 5.39008 12.8837 4.42879C12.8591 3.9815 12.6658 3.56019 12.3426 3.24994C12.0195 2.9397 11.5906 2.76362 11.1427 2.75727M9.75 16.9642H12.5358V7.21424H9.75V16.9642ZM78 1.64288V18.3571C78 18.7265 77.8532 19.0808 77.592 19.342C77.3308 19.6033 76.9765 19.75 76.6071 19.75H59.8929C59.5235 19.75 59.1692 19.6033 58.908 19.342C58.6467 19.0808 58.5 18.7265 58.5 18.3571V1.64288C58.5 1.27346 58.6467 0.91918 58.908 0.657965C59.1692 0.396749 59.5235 0.25 59.8929 0.25L76.6071 0.25C76.9765 0.25 77.3308 0.396749 77.592 0.657965C77.8532 0.91918 78 1.27346 78 1.64288ZM64.0714 7.21424H61.2858V16.9642H64.0714V7.21424ZM64.4196 4.42864C64.4196 3.46704 63.6401 2.6875 62.6786 2.6875C61.7172 2.6875 60.9375 3.46704 60.9375 4.42864C60.9375 5.39008 61.717 6.16962 62.6786 6.16962C63.6401 6.16962 64.4196 5.39008 64.4196 4.42864ZM75.2142 11.7967C75.2142 8.7325 74.1975 6.93576 71.2308 6.93576C70.6113 6.93585 70.0015 7.08836 69.4549 7.37984C68.9084 7.67131 68.4419 8.0928 68.0967 8.60712V7.21424H65.4642V16.9642H68.25V12.4096C68.2134 12.079 68.2453 11.7445 68.3436 11.4267C68.442 11.109 68.6046 10.8149 68.8215 10.5627C69.0384 10.3106 69.3048 10.1057 69.6043 9.96098C69.9037 9.81624 70.2298 9.73467 70.5621 9.72136C72.1779 9.72136 72.4286 11.3092 72.4286 12.4096V16.9642H75.2142V11.7967Z"
+                                        fill="#0A66C2" />
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================= footer =============================================== -->
+    <footer class="bg-light-grey relative pb-4">
+
+        <img src="./assets/images/svg/off-purple-wave-lines.svg" alt="wave lines"
+            class="absolute top-2 sm:top-6 left-0 pointer-events-none">
+        <img src="./assets/images/svg/off-purple-wave-lines.svg" alt="wave lines"
+            class="absolute bottom-28 md:bottom-20 right-0 pointer-events-none">
+
+        <div class="container px-3 max-w-[1164px] mx-auto">
+            <div class="flex flex-wrap justify-center lg:justify-between pt-12 sm:pt-16 lg:pt-[107px] pb-8 sm:pb-14">
+                <div class="md:w-1/2 px-3 lg:px-0 lg:w-[40%] py-3">
+                    <div class="flex justify-center md:justify-start flex-col md:items-start items-center">
+                        <a href="./"> <img src="./assets/images/svg/common/nav-logo.svg" alt="footer logo"></a>
+                        <p
+                            class="mt-2.5 mb-3 sm:mb-5 text-base text-light-black leading-150 max-w-[473px]  font-normal !font-poppins text-center md:text-start">
+                            At WellNest, we are dedicated to fostering personal and professional growth through holistic
+                            coaching and consultancy services.</p>
+                        <div class="flex items-center gap-2 sm:gap-4">
+                            <a href="https://www.instagram.com/" target="_blank"
+                                class="hover:-translate-y-2 ease-in-out duration-300"><img
+                                    src="./assets/images/svg/instagram.svg" alt="instagram"> </a>
+                            <a href="https://x.com/login" target="_blank"
+                                class="hover:-translate-y-2 ease-in-out duration-300"><img
+                                    src="./assets/images/svg/twitter.svg" alt="twitter"> </a>
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="hover:-translate-y-2 ease-in-out duration-300"><img
+                                    src="./assets/images/svg/facebook.svg" alt="facebook"> </a>
+                            <a href="https://www.youtube.com/" target="_blank"
+                                class="hover:-translate-y-2 ease-in-out duration-300"><img
+                                    src="./assets/images/svg/you-tube.svg" alt="you tube"> </a>
+                            <a href="https://www.tiktok.com/" target="_blank"
+                                class="hover:-translate-y-2 ease-in-out duration-300"><img
+                                    src="./assets/images/svg/tik-tok.svg" alt="tik tok"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 sm:px-3 lg:px-0 lg:w-[40%] ">
+                    <div class="flex gap-3 800:gap-10  lg:gap-[66px] mt-5 lg:mt-0">
+                        <ul>
+                            <li
+                                class="text-black font-normal leading-150 text-base font-poppins mb-2 sm:mb-3 text-center md:text-start">
+                                Use Cases</li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">About
+                                    Wellnest</a></li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Our
+                                    Services</a></li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Benefits</a>
+                            </li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">FAQs</a>
+                            </li>
+                            <li class=" text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Upcoming
+                                    Workshops</a></li>
+
+                        </ul>
+                        <ul>
+                            <li
+                                class="text-black font-normal leading-150 text-base font-poppins mb-2 sm:mb-3 text-center md:text-start">
+                                Policies</li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">User
+                                    Agreement</a></li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Terms
+                                    & Conditions </a></li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Privacy
+                                    Policy</a></li>
+                            <li class="mb-2 sm:mb-3 text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Legal
+                                    Policy</a></li>
+                            <li class=" text-center md:text-start"><a href=""
+                                    class="text-off-grey font-normal leading-150 text-base font-poppins relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-light-pastel-purple hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">What’s
+                                    New</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[0.5px] border-t-soil px-3 sm:px-0">
+            <div
+                class="container px-3 max-w-[1164px] mx-auto md:flex items-center py-[15px] justify-center md:justify-between">
+                <p
+                    class="font-normal text-base mb-1 sm:mb-0 leading-150 font-poppins text-light-black text-center md:text-start">
+                    The Wellnest ©<span id="currentYear"></span>. All Rights Reserved.</p>
+                <a href="./"
+                    class="font-normal text-base leading-150 font-poppins text-light-black flex items-center justify-center md:justify-start">Privacy
+                    Policy</a>
+            </div>
+        </div>
+    </footer>
+    <!-- ======== YEAR FUNCTION ========= -->
+    <script>
+        const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;
+    </script>
+    <!-- ============================= faq FUNCTION =================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+
+    <script>
+        import {
+            Collapse,
+            initTWE,
+        } from "tw-elements";
+
+        initTWE({ Collapse });
+    </script>
+    <!-- ============================================= navbar FUNCTION ========================================= -->
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function () {
             var mobileNav = document.getElementById('mobile-nav');
             if (mobileNav.classList.contains('left-[-100%]')) {
                 mobileNav.classList.remove('left-[-100%]');
                 mobileNav.classList.add('left-0');
+                document.body.classList.add('overflow-hidden');
             } else {
                 mobileNav.classList.remove('left-0');
                 mobileNav.classList.add('left-[-100%]');
+                document.body.classList.remove('overflow-hidden');
             }
         });
         document.querySelectorAll('#mobile-nav a').forEach(function (link) {
@@ -158,6 +1027,7 @@
             });
         });
     </script>
+    <script src="./assets/js/tailwind.config.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-pastel-purple': '#A18EE8',
+                        'light-brown': '#FFB685',
+                        'brown': '#E2803E',
+                        'rich-black': '#1E2031',
+                        'tea-green': "#C5FCC3",
+                        'sky': '#AEEFF4',
+                        'green': '#4CDFB2',
+                        'light-cream': '#FFF8F3',
+                        'purple': '#A18EE8',
+                        'grey': '#4D4A49',
+                        'off-black': '#0E0F13',
+                        'light-black': '#2F2F2F',
+                        'light-grey': '#E9E9E9',
+                    },
+                    fontSize: {
+                        'custom-md': '19px',
+                        'custom-5xl': '50px',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    lineHeight: {
+                        '120': '120%',
+                        '150': '150%',
+                        '118': '118%',
+                        '180': '180%',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex flex-col md:flex-row items-center bg-white">
+        <div class="md:w-1/2 flex justify-center">
+            <img src="/assets/images/webp/whydo/big-men.png" alt="Person" class="w-full md:w-[732px] object-cover h-auto md:h-[632px]">
+        </div>
+        <div class="md:w-1/2 max-w-full md:max-w-[732px] h-auto md:h-[632px] bg-light-cream flex flex-col justify-center  relative z-10">
+            <div class="p-6 md:ml-12">
+                <h1 class="md:text-4xl text-2xl lg:text-5xl font-semibold text-black font-poppins text-center md:text-start">Why I Do <span class="text-light-pastel-purple">What I Do?</span></h1>
+                <p class="font-normal font-poppins sm:text-base text-sm text-grey max-w-full md:max-w-[474px] pt-4 text-center md:text-start">To bridge the information and services gap to support our community in both corporate and individual wellness.</p>
+                <div class="flex justify-center md:justify-start"><button class="shadow-[2px_2px_0px_0px_#000000] sm:text-base text-sm font-semibold font-poppins bg-light-pastel-purple text-white py-3.5 px-6 rounded mt-4 md:mt-10 hover:border hover:border-light-pastel-purple hover:bg-transparent hover:text-light-pastel-purple border border-transparent duration-300 ">Book A Free Consultation Now</button></div>
+                <img src="/assets/images/webp/whydo/whyElips.webp" alt="whyElips" class="w-[80px] md:w-[173px] h-[100px] md:h-[233px] absolute top-0 right-0 -z-10">
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
