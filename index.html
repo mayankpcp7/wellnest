@@ -4,48 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellnest</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/webp/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'light-pastel-purple': '#A18EE8',
-                        'light-brown': '#FFB685',
-                        'brown': '#E2803E',
-                        'rich-black': '#1E2031',
-                        'tea-green': "#C5FCC3",
-                        'sky': '#AEEFF4',
-                        'green': '#4CDFB2',
-                        'light-cream': '#FFF8F3',
-                        'purple': '#A18EE8',
-                        'grey': '#4D4A49',
-                        'off-black': '#0E0F13',
-                        'light-black': '#2F2F2F',
-                        'light-grey': '#E9E9E9',
-                    },
-                    fontSize: {
-                        'custom-md': '19px',
-                        'custom-5xl': '50px',
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                    lineHeight: {
-                        '120': '1.2',
-                        '150': '1.5',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body>
-    <h1 class="text-custom-5xl font-bold underline text-purple">
-        Hello world!
-    </h1>
+<body class="bg-white">
+    <header class=" relative xl:min-h-screen">
+        <img class="absolute bottom-[24%] hidden lg:block start-[50%] translate-x-[-50%]"
+            src="./assets/images/svg/header/bottom-lines.svg" alt="bottom-lines">
+        <img class="max-w-[50px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[50%] sm:top-[11%] start-0"
+            src="./assets/images/webp/hero/left-green-vector.webp" alt="vector">
+        <img class="max-w-[90px] lg:max-w-[130px] absolute pointer-events-none -z-0 top-[31%] end-0"
+            src="./assets/images/webp/hero/right-orange-vector.webp" alt="vector">
+        <nav class="bg-skin">
+            <div class="max-w-[1172px] mx-auto bg-skin px-4 py-6">
+                <div class="flex items-center justify-between">
+                    <a href="/index.html"><img class="max-w-[130px] sm:max-w-[160px] md:max-w-[179px] xl:max-w-[187px]"
+                            src="./assets/images/svg/common/nav-logo.svg" alt="nav-logo"></a>
+                    <div class="lg:hidden">
+                        <button id="menu-toggle" class="text-black relative z-40 focus:outline-none">
+                            <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="none" stroke="#A18EE8" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul id="nav-menu" class="items-center gap-6 xl:gap-8 hidden lg:flex">
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#about">About Wellnest</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#services">Our Services</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#benefits">Benefits</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#faqs">FAQs</a></li>
+                        <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
+                                href="#workshops">Upcoming Workshops</a></li>
+
+                    </ul>
+                    <button
+                        class="text-white font-semibold text-base lg:block hidden bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                        Started</button>
+
+                </div>
+            </div>
+            <div id="mobile-nav"
+                class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-30 h-screen w-full flex items-center justify-center">
+                <ul class="flex flex-col items-center py-6">
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#about">About
+                            Wellnest</a></li>
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#services">Our Services</a></li>
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#benefits">Benefits</a></li>
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#faqs">FAQs</a></li>
+                    <li class="py-2"><a
+                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                            href="#workshops">Upcoming Workshops</a></li>
+                    <li class="py-2">
+                        <button
+                            class="text-white font-semibold text-base bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                            Started</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="pt-12 md:pt-20 px-4 flex flex-col bg-skin justify-center items-center">
+            <h1
+                class="text-center font-poppins font-bold text-custom-4xl sm:text-5xl lg:text-6xl leading-120 text-black">
+                Welcome To <span class="text-light-pastel-purple">Wellnest</span></h1>
+            <p
+                class="pt-2 sm:pt-3 md:pt-4 text-center lg:max-w-[642px] md:max-w-[500px] sm:max-w-[450px] font-poppins text-sm md:text-base text-black opacity-70">
+                Supporting Individuals And
+                Companies In Achieving Their Highest Potential For The Betterment Of Themselves And Our
+                Community.</p>
+            <button
+                class="mt-5 sm:mt-10 text-white relative z-10 font-poppins text-sm sm:text-base font-semibold lg:px-6 sm:px-5 px-4 py-2 sm:py-3 lg:py-3.5 bg-light-pastel-purple shadow-nav-button hover:shadow-none duration-300 rounded-[4px]">Book
+                A Free Consultation</button>
+            <div class="max-w-[1296px] mx-auto mt-12">
+                <div class="grid justify-center relative z-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-7">
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl lg:mt-20">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-1.webp" alt="grid-item-1">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-2.webp" alt="grid-item-2">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl lg:mt-20 ">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-3.webp" alt="grid-item-3">
+                    </div>
+                    <div
+                        class="overflow-hidden max-w-[303px] sm:max-w-full lg:max-w-[303px] lg:h-[427px] xl:min-w-[303px] mx-auto sm:mx-0 rounded-3xl">
+                        <img class="w-full max-w-[303px] mx-auto sm:max-w-full h-[400px] lg:h-[427px] object-cover hover:scale-105 transition-transform duration-300"
+                            src="./assets/images/webp/hero/grid-item-4.webp" alt="grid-item-4">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <img class="w-full bg-white relative max-w-[303px] sm:max-w-full pointer-events-none z-[2] -mt-[11%]"
+            src="./assets/images/webp/hero/bottom-curve.webp" alt="bottom-curve">
+    </header>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav.classList.contains('left-[-100%]')) {
+                mobileNav.classList.remove('left-[-100%]');
+                mobileNav.classList.add('left-0');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                mobileNav.classList.remove('left-0');
+                mobileNav.classList.add('left-[-100%]');
+                document.body.classList.remove('overflow-hidden');
+            }
+        });
+        document.querySelectorAll('#mobile-nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-nav').classList.add('left-[-100%]');
+                document.getElementById('mobile-nav').classList.remove('left-0');
+            });
+        });
+    </script>
+    <script src="./assets/js/tailwind.config.js"></script>
 </body>
 
 </html>
