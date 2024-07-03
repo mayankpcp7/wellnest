@@ -1,0 +1,139 @@
+<doctype html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wellnest</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'light-pastel-purple': '#A18EE8',
+                            'light-brown': '#FFB685',
+                            'brown': '#E2803E',
+                            'rich-black': '#1E2031',
+                            'tea-green': "#C5FCC3",
+                            'sky': '#AEEFF4',
+                            'green': '#4CDFB2',
+                            'light-cream': '#FFF8F3',
+                            'purple': '#A18EE8',
+                            'grey': '#4D4A49',
+                            'off-black': '#0E0F13',
+                            'light-black': '#2F2F2F',
+                            'light-grey': '#E9E9E9',
+                        },
+                        fontSize: {
+                            'custom-md': '19px',
+                            'custom-3xl': '32px',
+                            'custom-5xl': '50px',
+                        },
+                        fontFamily: {
+                            'poppins': ['Poppins', 'sans-serif'],
+                            'inter': ['Inter', 'sans-serif'],
+                        },
+                        lineHeight: {
+                            '120': '120%',
+                            '150': '150%',
+                        },
+                        boxShadow: {
+                            button: "2px 2px 0px 0px #000000"
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <section class="max-w-[1472p] px-4 mx-auto py-[70px]">
+            <h2 class="text-center leading-120 text-black text-5xl font-semibold font-poppins">Wellnest <span
+                    class="text-purple">Services</span></h2>
+            <div class="mt-10 flex justify-center flex-wrap felx-row gap-7">
+                <div
+                    class="bg-tea-green max-w-[364px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 hover:scale-[1.02] transition-all duration-300 ease-linear">
+                    <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                        <img src="./assets/images/services/svg/coaching.svg" alt="coaching">
+                    </div>
+                    <h4 class="font-poppins font-medium text-2xl text-rich-black leading-120 pt-6">One-On-One Coaching
+                    </h4>
+                    <p class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2">As
+                        a
+                        Certified
+                        Health Coach,
+                        I support
+                        individuals in addressing all areas of their life to achieve alignment, balance,
+                        purpose, health, wellness and happiness. Click here to find out more and book your free
+                        consultation</p>
+                    <button
+                        class="font-poppins font-semibold text-base text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-[52px] border-black border-e border-b">Find
+                        Out
+                        More</button>
+                </div>
+                <div
+                    class="bg-sky max-w-[364px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 hover:scale-[1.02] transition-all duration-300 ease-linear">
+                    <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                        <img src="./assets/images/services/svg/consultancy.svg" alt="consultancy">
+                    </div>
+                    <h4 class="font-poppins font-medium text-2xl text-rich-black leading-120 pt-6">Brand Consultancy &
+                        Corporate Wellness</h4>
+                    <p class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2">
+                        With 16 years of corporate experience, I now partner with businesses that
+                        value social responsibility, aim to build authentic brands, and strive to be
+                        Employers of Choice. Click here to explore my services and workshops.</p>
+                    <button
+                        class="font-poppins font-semibold text-base text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-6 border-black border-e border-b ">Explore
+                        More</button>
+                </div>
+                <div
+                    class="bg-green max-w-[364px] rounded-[30px] border-e-4 border-b-4 border-black pt-6 px-6 pb-10 hover:scale-[1.02] transition-all duration-300 ease-linear relative">
+                    <div
+                        class="absolute top-0 left-0 w-full h-full rounded-[30px] backdrop-blur-[15px] bg-white z-10 bg-opacity-10 flex justify-center items-center">
+
+                        <div class="flex flex-col justify-center items-center ">
+                            <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                                <img src="./assets/images/services/svg/consultancy.svg" alt="consultancy">
+                            </div>
+                            <h4 class="font-poppins font-medium text-custom-3xl text-rich-black leading-120 pt-6">
+                                Wellness
+                                Store
+                            </h4>
+                            <button
+                                class="font-poppins font-semibold text-base text-white leading-150 bg-purple py-3.5 px-6 shadow-button rounded mt-5 border-black border-e border-b ">Coming
+                                Soon</button>
+                        </div>
+                    </div>
+                    <div class="bg-white w-20 h-20 rounded-full flex justify-center items-center ms-0.5">
+                        <img src="./assets/images/services/svg/store.svg" alt="store">
+                    </div>
+                    <h4 class="font-poppins font-medium text-2xl text-rich-black leading-120 pt-6">Wellness Store</h4>
+                    <p class="text-rich-black text-opacity-70 text-base font-normal font-inter leading-150 pt-2">
+                        We are thrilled to introduce a space dedicated to nurturing your mind, body, and spirit. Whether
+                        you're looking to
+                        enhance your physical health, boost your mental clarity, or find balance in your daily life, our
+                        store will offer
+                        everything you need to thrive.</p>
+                    <button
+                        class="font-poppins font-semibold text-base text-white leading-150 bg-purple py-3.5 px-[29px] rounded-full mt-6">Book
+                        Your Free Consultaion</button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light-brown bg-opacity-10 relative">
+            <img class="absolute top-0 left-0" src="./assets/images/services/svg/bubble-vector.svg" alt="bubble-vector">
+            <div class="max-w-[1172px] px-4 mx-auto py-[106px]">
+                <p class="font-poppins font-semibold text-2xl text-black max-w-[618px]">“The key to change is honesty!
+                    It’s time we
+                    slow
+                    down and really look at the different parts of our lives that are
+                    feeding us and propelling us forward - and parts that are only holding us back.”</p>
+                <p class="font-poppins font-medium text-xl text-brown">Coach Mariyam</p>
+                <p class="font-poppins font-normal text-base text-brown">CEO</p>
+            </div>
+        </section>
+    </body>
+
+    </html>
