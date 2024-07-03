@@ -21,9 +21,10 @@ tailwind.config = {
         "light-black": "#2F2F2F",
         "light-grey": "#E9E9E9",
         skin: "#FCF4EC",
+        'platinum': '#E5E5E5'
       },
       fontSize: {
-         'custom-3xl': '32px',
+        'custom-3xl': '32px',
         "custom-4xl": "40px",
         "custom-md": "19px",
         "custom-5xl": "50px",
@@ -43,7 +44,9 @@ tailwind.config = {
         "nav-button": "2px 2px 0px 0px #000000",
          button: "2px 2px 0px 0px #000000",
         coachImg: "0px 36.25px 25.89px 0px #040B1426",
-         graymeet: "0px 10px 20px 0px #d0d0d0",
+        graymeet: "0px 10px 20px 0px #d0d0d0",
+        'button-shadow': '2px 2px 0px 0px black',
+        'button-hover-shadow': '-2px -2px 0px 0px black',
       },
       screen: {
         xs: "500px",
