@@ -24,13 +24,20 @@
                     <a href="/index.html"><img class="max-w-[130px] sm:max-w-[160px] md:max-w-[179px] xl:max-w-[187px]"
                             src="./assets/images/svg/common/nav-logo.svg" alt="nav-logo"></a>
                     <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-black relative z-40 focus:outline-none">
-                            <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="none" stroke="#A18EE8" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <button id="menu-toggle" class="text-black relative z-40 focus:outline-none"
+                            onclick="toggleMenu()">
+                            <svg id="menu-icon" class="w-6 lg:w-8 h-6 lg:h-8" fill="none" stroke="#A18EE8"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
+                            <svg id="close-icon" class="w-6 lg:w-8 h-6 lg:h-8 hidden" fill="none" stroke="#A18EE8"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
                         </button>
+
                     </div>
                     <ul id="nav-menu" class="items-center gap-6 xl:gap-8 hidden lg:flex">
                         <li><a class="font-poppins text-black relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full  text-base font-normal opacity-70"
@@ -54,25 +61,25 @@
             <div id="mobile-nav"
                 class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-30 h-screen w-full flex items-center justify-center">
                 <ul class="flex flex-col items-center py-6">
-                    <li class="py-2"><a
-                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                    <li class="py-3"><a
+                            class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#about">About
                             Wellnest</a></li>
-                    <li class="py-2"><a
-                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                    <li class="py-3"><a
+                            class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#services">Our Services</a></li>
-                    <li class="py-2"><a
-                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                    <li class="py-3"><a
+                            class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#benefits">Benefits</a></li>
-                    <li class="py-2"><a
-                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                    <li class="py-3"><a
+                            class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#faqs">FAQs</a></li>
-                    <li class="py-2"><a
-                            class="font-poppins text-black text-base font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
+                    <li class="py-3"><a
+                            class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#workshops">Upcoming Workshops</a></li>
-                    <li class="py-2">
+                    <li class="py-4">
                         <button
-                            class="text-white font-semibold text-base bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
+                            class="text-white font-semibold text-xl sm:text-md bg-light-pastel-purple py-3 xl:py-3.5 duration-300 hover:shadow-none px-7 xl:px-[29px] shadow-nav-button rounded-[4px] font-poppins">Get
                             Started</button>
                     </li>
                 </ul>
@@ -480,12 +487,12 @@
         </div>
     </section>
     <!-- ====================================== WHY I DO ====================================== -->
-    <section class="bg-light-cream relative">
+    <section class="bg-light-cream relative pb-12 md:pb-0">
         <img class="absolute top-0 end-0 max-w-[50px] md:max-w-[100px] lg:max-w-full -z-0 pointer-events-none"
-            src="./assets/images/webp/whydo/whyElips.webp" alt="ellipse">
+            src="./assets/images/webp/whydo/right-orange-ellipse.webp" alt="ellipse">
         <div class="max-w-[1172px] mx-auto px-4 ">
             <div class="flex md:flex-row flex-col items-center">
-                <img class="w-[500px] relative z-10 xl:w-[732px] xl:-ms-[13.2%]"
+                <img class="max-w-[332px] h-[230px] sm:max-w-[390px] sm:h-[350px] md:max-w-[400px] relative z-10 object-cover lg:h-[532px]  md:h-[370px] lg:max-w-[632px] xl:h-[632px]  xl:max-w-[732px] xl:-ms-[13.2%]"
                     src="./assets/images/webp/whydo/big-men.webp" alt="big-men">
                 <div class="flex pt-5 md:pt-0 flex-col items-center md:items-start  md:ps-4 lg:ps-6 xl:ps-12">
                     <h2
@@ -1044,9 +1051,20 @@
             link.addEventListener('click', function () {
                 document.getElementById('mobile-nav').classList.add('left-[-100%]');
                 document.getElementById('mobile-nav').classList.remove('left-0');
+                document.body.classList.remove('overflow-hidden')
             });
         });
+
+        function toggleMenu() {
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+
     </script>
+
     <script src="./assets/js/tailwind.config.js"></script>
 </body>
 
