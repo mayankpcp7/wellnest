@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
+
+
+    <script>tailwind.config = {
             theme: {
                 extend: {
                     colors: {
@@ -20,6 +22,7 @@
                         'light-cream': '#FFF8F3',
                         'purple': '#A18EE8',
                         'grey': '#4D4A49',
+                        'dark-grey': '#56575A',
                         'off-black': '#0E0F13',
                         'light-black': '#2F2F2F',
                         'light-grey': '#E9E9E9',
@@ -41,15 +44,83 @@
                 }
             }
         }
+
     </script>
 </head>
 
 <body>
     <section>
         <div class="container mx-auto max-w-[768px] px-3">
-            <h2>Frequently Asked <span>Questions</span></h2>
-        </div>
+            <h2 class="text-5xl text-black font-poppins font-semibold pb-10 text-center ">Frequently Asked <span
+                    class="text-purple">Questions</span></h2>
+            <div id="accordionExample">
+                <div data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne"
+                    class="border-r-[2px] rounded-xl mb-5 bg-white shadow-[0_4px_23px_0_#0000001F]  p-6 border-black border-b-[2px]">
+                    <h2 class="mb-0" id="headingOne">
+                        <button
+                            class="group relative flex w-full items-center leading-118 rounded-t-lg [&:not([data-twe-collapse-collapsed])]:ps-[46px] text-left text-base font-poppins font-medium text-off-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  "
+                            type="button" data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            1. What is a Health Coaches scope of practice?
+                            <span
+                                class="-me-1 ms-auto h-5 w-5 shrink-0 opacity-0 transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:opacity-100 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.12 0.953254L8 7.05992L1.88 0.953253L2.60673e-06 2.83325L8 10.8333L16 2.83325L14.12 0.953254Z"
+                                        fill="black" />
+                                </svg>
+
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne"
+                        class="!visible max-w-[627px] [&:not([data-twe-collapse-collapsed])]:ps-[46px]"
+                        data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
+                        data-twe-parent="#accordionExample">
+                        <div class="px-5 pt-[14px]">
+                            <ul class="list-disc">
+                                <li class="pt-1 text-dark-gray font-poppins font-normal text-base leading-150">
+                                    Facilitate and
+                                    empower clients to develop and achieve
+                                    health and
+                                    wellness goals.
+                                </li>
+                                <li class="pt-1 text-dark-gray font-poppins font-normal text-base leading-150">Support
+                                    clients in
+                                    navigating behavioral change in the
+                                    capacity of a
+                                    holistic health
+                                    professional, an accountability partner, a guide on the side, and an intuition and
+                                    transformational coach.</li>
+                                <li class="pt-1 text-dark-gray font-poppins font-normal text-base leading-150">Share
+                                    evidence-based
+                                    resources and information from
+                                    recognized
+                                    authorities.</li>
+                                <li class="pt-1 text-dark-gray font-poppins font-normal text-base leading-150">Assist
+                                    clients in
+                                    strengthening their insight and
+                                    intuition to set
+                                    goals and commit
+                                    to action steps, to establish accountability and real transformation in their lives.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+
+    <script>
+        import {
+            Collapse,
+            initTWE,
+        } from "tw-elements";
+
+        initTWE({ Collapse });
+    </script>
 </body>
 
 </html>
