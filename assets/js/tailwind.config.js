@@ -21,7 +21,8 @@ tailwind.config = {
         "light-black": "#2F2F2F",
         "light-grey": "#E9E9E9",
         skin: "#FCF4EC",
-        'platinum': '#E5E5E5'
+        'platinum': '#E5E5E5',
+        'dark-grey': '#56575A',
       },
       fontSize: {
         'custom-3xl': '32px',
