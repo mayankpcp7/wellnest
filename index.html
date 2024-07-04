@@ -61,7 +61,7 @@
             <div id="mobile-nav"
                 class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-30 h-screen w-full flex items-center justify-center">
                 <ul class="flex flex-col items-center py-6">
-                    <li class="py-3"><a
+                    <li class="py-3"><a  id="menu-toggle"
                             class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#about">About
                             Wellnest</a></li>
@@ -126,7 +126,7 @@
             src="./assets/images/webp/hero/bottom-curve.webp" alt="bottom-curve">
     </header>
     <!-- =================================== MEET MARIAM ================================= -->
-    <section class="pt-12 md:pt-14 lg:pt-[125px] relative lg:pb-[70px]">
+    <section class="pt-12 md:pt-14 lg:pt-[125px] relative lg:pb-[70px]" id="about">
         <div class="container max-w-[1140px] mx-auto px-4 md:px-3">
             <div class="flex flex-wrap justify-between flex-row -mx-3">
                 <div class="lg:w-6/12 w-full px-6 sm:px-3 ">
@@ -221,7 +221,7 @@
         </div>
     </section>
     <!-- =================================== SERVICES ====================================== -->
-    <section class="max-w-[1472p] px-4 mx-auto md:py-[70px] sm:py-16 py-12 relative">
+    <section id="services" class="max-w-[1472p] px-4 mx-auto md:py-[70px] sm:py-16 py-12 relative">
         <img class="absolute top-[3%] right-0 md:block hidden pointer-events-none "
             src="./assets/images/svg/grin-lines.svg" alt="grin-lines">
         <h2
@@ -361,7 +361,7 @@
         </div>
     </section>
     <!-- ===================================  MY VISION  ===================================== -->
-    <section class="pt-12 sm:pt-16 md:pt-20 lg:pt-[150px] relative max-w-[1920px] mx-auto">
+    <section class="pt-12 sm:pt-16 md:pt-20 lg:pt-[150px] relative max-w-[1920px] mx-auto" id="benefits">
         <span class=" absolute top-[1%] md:top-[2%] lg:top-[3%] left-0">
             <svg class="w-[105px] h-[30px] md:w-[185px] md:h-[51px]" width="185" height="51" viewBox="0 0 185 51"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -491,11 +491,11 @@
     <!-- =================================== WHY I DO ====================================== -->
     <section class="bg-light-cream relative pb-12 md:pb-0">
         <img class="absolute top-0 end-0 max-w-[50px] md:max-w-[100px] lg:max-w-full -z-0 pointer-events-none"
-            src="./assets/images/webp/whydo/right-orange-ellipse.webp" alt="ellipse">
+            src="./assets/images/webp/right-orange-ellipse.webp" alt="ellipse">
         <div class="max-w-[1172px] mx-auto px-4 ">
             <div class="flex md:flex-row flex-col items-center">
                 <img class="max-w-[332px] h-[230px] sm:max-w-[390px] sm:h-[350px] md:max-w-[400px] relative z-10 object-cover lg:h-[532px]  md:h-[370px] lg:max-w-[632px] xl:h-[632px]  xl:max-w-[732px] xl:-ms-[13.2%]"
-                    src="./assets/images/webp/whydo/big-men.webp" alt="big-men">
+                    src="./assets/images/webp/big-men.webp" alt="big-men">
                 <div class="flex pt-5 md:pt-0 flex-col items-center md:items-start  md:ps-4 lg:ps-6 xl:ps-12">
                     <h2
                         class="text-black font-poppins md:text-start text-center font-semibold leading-120 text-custom-3xl md:text-4xl lg:text-5xl">
@@ -512,7 +512,7 @@
         </div>
     </section>
     <!-- ==================================== FAQ =========================================== -->
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden" id="faqs">
         <img class="bottom-0 -left-[10%] absolute pointer-events-none hidden lg:block "
             src="./assets/images/svg/green-box.svg" alt="vectors">
         <img class="top-[-5%] -right-[10%] absolute pointer-events-none hidden lg:block "
@@ -863,7 +863,7 @@
         </div>
     </section>
     <!-- ====================================== VISIT ========================================== -->
-    <section class="pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[156px]">
+    <section class="pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-[156px]" id="workshops">
         <div class="max-w-[1164px] mx-auto px-3">
             <div
                 class="bg-light-brown rounded-3xl border-r-8 border-b-8 border-r-black border-b-black py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[117px] px-7 md:px-10 xl:px-[51px] relative z-[1] overflow-hidden">
@@ -1042,18 +1042,18 @@
             if (mobileNav.classList.contains('left-[-100%]')) {
                 mobileNav.classList.remove('left-[-100%]');
                 mobileNav.classList.add('left-0');
-                document.body.classList.add('overflow-hidden');
+                document.body.classList.add('overflow_hidden');
             } else {
                 mobileNav.classList.remove('left-0');
                 mobileNav.classList.add('left-[-100%]');
-                document.body.classList.remove('overflow-hidden');
+                document.body.classList.remove('overflow_hidden');
             }
         });
         document.querySelectorAll('#mobile-nav a').forEach(function (link) {
             link.addEventListener('click', function () {
                 document.getElementById('mobile-nav').classList.add('left-[-100%]');
                 document.getElementById('mobile-nav').classList.remove('left-0');
-                document.body.classList.remove('overflow-hidden')
+                document.body.classList.remove('overflow_hidden')
             });
         });
 
