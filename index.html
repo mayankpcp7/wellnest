@@ -4,10 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellnest</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/webp/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Primary Meta Tags -->
+    <title>Wellnest</title>
+    <meta name="title" content="Wellnest" />
+    <meta name="description" content="Welcome To Wellnest" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Wellnest" />
+    <meta property="og:description" content="Welcome To Wellnest" />
+    <meta property="og:image" content="https://thumbs2.imgbox.com/78/2b/ZDRSBH9e_t.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Wellnest" />
+    <meta property="twitter:description" content="Welcome To Wellnest" />
+    <meta property="twitter:image" content="https://thumbs2.imgbox.com/78/2b/ZDRSBH9e_t.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
 <body class="bg-white">
@@ -61,7 +77,7 @@
             <div id="mobile-nav"
                 class="lg:hidden absolute inset-0 left-[-100%] bg-white duration-300 transition-all z-30 h-screen w-full flex items-center justify-center">
                 <ul class="flex flex-col items-center py-6">
-                    <li class="py-3"><a  id="menu-toggle"
+                    <li class="py-3"><a id="menu-toggle"
                             class="font-poppins text-black text-xl sm:text-md font-normal opacity-70 relative before:absolute before:w-0 before:h-[2px] before:bottom-[-3px] before:duration-300 duration-300 hover:text-purple before:start-[50%] before:translate-x-[-50%] before:bg-purple hover:before:w-full max-w-[303px] sm:max-w-full"
                             href="#about">About
                             Wellnest</a></li>
@@ -379,7 +395,8 @@
         <img src="./assets/images/webp/vision-old-man.webp" alt="old-man"
             class="w-full max-w-[1920px] md:min-h-[unset] min-h-[250px] max-h-[603px] mx-auto object-cover h-full">
         <div class="max-w-[1172px] mx-auto px-4 md:px-3">
-            <h2 class="font-poppins font-semibold text-custom-3xl md:text-4xl lg:text-5xl !leading-120 text-center mt-4 sm:mt-6 md:mt-10">
+            <h2
+                class="font-poppins font-semibold text-custom-3xl md:text-4xl lg:text-5xl !leading-120 text-center mt-4 sm:mt-6 md:mt-10">
                 My Vision For <span class="text-light-pastel-purple">Tomorrow</span></h2>
             <p class="font-poppins font-normal text-sm sm:text-base !leading-150 text-center mt-2 sm:mt-4 opacity-70">
                 <span class="sm:block">To support our society in realizing a better self, a better</span>
@@ -1022,7 +1039,8 @@
     </footer>
     <!-- ==================================== YEAR FUNCTION ===================================== -->
     <script>
-        const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
     </script>
     <!-- ===================================== FAQ FUNCTION ======================================= -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
@@ -1032,7 +1050,9 @@
             initTWE,
         } from "tw-elements";
 
-        initTWE({ Collapse });
+        initTWE({
+            Collapse
+        });
     </script>
     <!-- ===================================== NAVBAR FUNCTION ====================================== -->
     <script>
@@ -1063,7 +1083,6 @@
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
         }
-
     </script>
 
     <script src="./assets/js/tailwind.config.js"></script>
